@@ -8,6 +8,9 @@ myList = file_open.read().splitlines()
 myDict = {}
 
 for word in myList:
+    index = word.find(',')
+    if(index != -1):
+        word = '"' + word+'"'
     if (word in myDict):
         myDict[word] += 1
     else:
@@ -16,6 +19,4 @@ for word in myList:
 output_file = open("../generatedFiles/data2.csv", "w")
 
 for key in myDict.keys():
-    output_file.write("%s,%s\n"%(key,myDict[key]))
-
-print(myDict)
+    output_file.write("%s,%s\n" % (key, myDict[key]))
