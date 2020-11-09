@@ -30,12 +30,18 @@ for word in list_word_freq:
     for tag in dict_tag_freq.keys():
         temp = word[0]+"_"+tag
         temp1 = word[0]+"|"+tag
+        if temp1.find(',') != -1:
+            temp1 = '"' + temp1 + '"'
         if (temp in dict_word_tag_freq):
             probability_of_word_given_tag[temp1] = int(dict_word_tag_freq[temp]) / int(dict_tag_freq[tag])
         else:
             probability_of_word_given_tag[temp1] = 0
 
-print(probability_of_word_given_tag)
+output_file = open("../generatedFiles/data4.txt", "w")
+
+for key in probability_of_word_given_tag.keys():
+    output_file.write("%s,%s\n" % (key, probability_of_word_given_tag[key]))
+
 file_word_tag_freq.close()
 file_tag_freq.close()
 file_word_freq.close()

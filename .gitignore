@@ -2,8 +2,7 @@ Test-corpus
 Train-corpus
 Submission
 Assigment.pdf
-test
+test/*
 testGenerated
 generatedFiles
-.gitignore
 genFiles
