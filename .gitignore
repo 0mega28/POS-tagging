@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 Test-corpus
 Train-corups
 
-=======
 Test-corpus/*
 Train-corpus/*
->>>>>>> 0a05a3d... modified gitignore
 Submission
 Assigment.pdf
 test/*
