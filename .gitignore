@@ -9,3 +9,6 @@ genFiles
 Assigment-files.tar.gz
 tagguide.ps.gz
 genFiles
+generatedFiles/*data*
+generatedFiles/*freq*
+generatedFiles.zip
