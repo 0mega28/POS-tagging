@@ -12,3 +12,5 @@ genFiles
 generatedFiles/*data*
 generatedFiles/*freq*
 generatedFiles.zip
+generatedFiles/data*
+generatedFiles/*freq*
