@@ -14,3 +14,6 @@ generatedFiles/*freq*
 generatedFiles.zip
 generatedFiles/data*
 generatedFiles/*freq*
+accuracy.png
+fscore.png
+Confusion_matrix_HMM.txt
